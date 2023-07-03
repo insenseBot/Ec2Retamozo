@@ -1,4 +1,5 @@
 com\retamozo\ec2\CursosRepository.class
 com\retamozo\ec2\MainController.class
+com\retamozo\ec2\Controller.class
 com\retamozo\ec2\Cursos.class
 com\retamozo\ec2\Ec2RetamozoApplication.class

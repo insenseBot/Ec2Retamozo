@@ -46,6 +46,3 @@ DELETE https://{{subdominio}}.onrender.com/api/curso/eliminar HTTP/1.1
 Content-Type: application/x-www-form-urlencoded
 
 id=1
-
-###
-GET http://localhost:8080/api/curso/listar
