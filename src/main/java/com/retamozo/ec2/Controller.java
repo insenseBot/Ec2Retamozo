@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(path = "/idat")
+@RequestMapping(path = "/")
 public class Controller {
     
     @GetMapping(path = "/")
@@ -13,12 +13,12 @@ public class Controller {
         return "SL78781161 - Retamozo Sanchez Bryan Hugo";
     }
 
-    @GetMapping(path = "/codigo")
+    @GetMapping(path = "idat/codigo")
     public String codigo(){
         return "SL78781161";
     }
 
-    @GetMapping(path = "/nombre-completo")
+    @GetMapping(path = "idat/nombre-completo")
     public String nombre(){
         return "Retamozo Sanchez Bryan Hugo";
     }

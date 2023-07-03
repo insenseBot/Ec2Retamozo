@@ -12,13 +12,13 @@ import java.lang.String;
 
 
 @Controller
-@RequestMapping(path = "/curso")
+@RequestMapping(path = "/api/curso")
 public class MainController {
     @Autowired
     private CursosRepository cursosRepository;
 
     @PostMapping(path = "/nuevo") 
-    public @ResponseBody String addNewUser(@RequestParam String name, @RequestParam int credito) {
+    public @ResponseBody String addNewCurso(@RequestParam String name, @RequestParam int credito) {
 
         Cursos c = new Cursos();
         c.setNombre(name);
@@ -28,12 +28,12 @@ public class MainController {
     }
 
     @GetMapping(path = "/listar") 
-    public @ResponseBody Iterable<Cursos> getAllUsers() {
+    public @ResponseBody Iterable<Cursos> getAllCursos() {
         return cursosRepository.findAll();
     }
 
     @DeleteMapping(path = "/eliminar")
-    public @ResponseBody String deleteUser(@RequestParam Integer id) {
+    public @ResponseBody String deleteCurso(@RequestParam Integer id) {
         Cursos cursos = cursosRepository.findById(id).orElse(null);
         if (cursos != null) {
             cursosRepository.delete(cursos);

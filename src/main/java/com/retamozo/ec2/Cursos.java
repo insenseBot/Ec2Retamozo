@@ -17,15 +17,6 @@ public class Cursos {
 
     private int credito;
 
-    public Cursos() {
-    }
-
-    public Cursos(Integer id, String nombre, int credito) {
-        this.id = id;
-        this.nombre = nombre;
-        this.credito = credito;
-    }
-
     public Integer getId() {
         return id;
     }
