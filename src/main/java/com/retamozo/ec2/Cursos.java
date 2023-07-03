@@ -15,7 +15,7 @@ public class Cursos {
 
     private String nombre;
 
-    private int credito;
+    private Integer credito;
 
     public Integer getId() {
         return id;
@@ -37,7 +37,7 @@ public class Cursos {
         return credito;
     }
 
-    public void setCredito(int credito) {
+    public void setCredito(Integer credito) {
         this.credito = credito;
     }
 

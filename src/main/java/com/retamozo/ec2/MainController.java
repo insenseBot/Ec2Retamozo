@@ -18,10 +18,10 @@ public class MainController {
     private CursosRepository cursosRepository;
 
     @PostMapping(path = "/nuevo") 
-    public @ResponseBody String addNewCurso(@RequestParam String name, @RequestParam int credito) {
+    public @ResponseBody String addNewCurso(@RequestParam String nombre, @RequestParam Integer credito) {
 
         Cursos c = new Cursos();
-        c.setNombre(name);
+        c.setNombre(nombre);
         c.setCredito(credito);
         cursosRepository.save(c);
         return "Saved";
